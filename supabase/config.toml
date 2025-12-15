@@ -1,0 +1,22 @@
+project_id = "ymiycjobxnsghrsemjfw"
+[functions.send-phone-otp]
+enabled = true
+verify_jwt = true
+import_map = "./functions/send-phone-otp/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/send-phone-otp/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/send-phone-otp/*.html" ]
+
+[functions.verify-phone-otp]
+enabled = true
+verify_jwt = true
+import_map = "./functions/verify-phone-otp/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/verify-phone-otp/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/verify-phone-otp/*.html" ]
